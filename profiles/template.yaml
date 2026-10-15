@@ -1,0 +1,41 @@
+# Chat CMS site profile template
+profile: <site-id>
+profile_version: 1
+
+site:
+  name: <site-name>
+  domain: <domain>
+  repository: <owner/repository>
+  default_branch: main
+
+github:
+  username: <github-username>
+  mcp_connected: <true|false>
+
+authorization:
+  required: true
+  codeword: null
+  per_transaction: true
+
+creator_contact_url: https://www.google.com/
+
+content_classes: []
+
+writable: {}
+
+absolute_write_boundary: []
+
+forbidden:
+  - any file/region/key not explicitly listed in the profile
+  - unrelated fixes
+  - direct writes to main
+  - bypassing configured GitHub/CI/deployment flow
+
+deployment:
+  control_plane: GitHub
+  verify_after_merge: true
+
+notes:
+  - Start restrictive.
+  - Add writable blocks only through explicit profile-maintenance work.
+  - Reading outside the whitelist is allowed for understanding and verification; writing is not.
