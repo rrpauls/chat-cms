@@ -2,6 +2,8 @@
 
 **Turn an existing Git-based website into a controlled conversational CMS — without migrating its content.**
 
+[![M8ven Score](https://m8ven.ai/badge/mcp/rrpauls-chat-cms-1ksbh3?v=f0d3ac1c09349e7b59418972b57a155c)](https://m8ven.ai/mcp/rrpauls-chat-cms-1ksbh3?s=readme)
+
 Chat CMS is a portable AI-agent skill for safely managing approved website content through natural language.
 
 Instead of giving an AI unrestricted repository access, Chat CMS uses a **site profile** that defines exactly what may be changed.
